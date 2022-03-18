@@ -1,0 +1,289 @@
+/* Certification Section Starts Here */
+
+.navbar__main .nav__btn .btn__about {
+  margin: 0 10px;
+  font-size: 14px;
+}
+.certificate {
+  background-color: #edf0f0;
+  padding-top: 25px;
+}
+
+.certification-container {
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  padding: 32px;
+  margin: 0px auto;
+  border-radius: 4px;
+  height: auto;
+}
+.certification-header {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.certification-p {
+  color: rgb(111, 117, 123);
+  margin: 24px 0px;
+  font-size: 16px;
+}
+
+.certificate__requirement {
+  padding: 20px 0 0 20px;
+  background-color: #e4eafb;
+  border-radius: 5px;
+  display: flex;
+  align-items: start;
+}
+.certificate__requirement .fa-graduation-cap {
+  color: #6483dd;
+  font-size: 20px;
+}
+.certificate__requirement .require_heading > h5 {
+  font-size: 14px;
+}
+
+.certificate__requirement .require_heading > p {
+  font-size: 14px;
+}
+
+#cert_form {
+  max-width: 500px;
+}
+
+#cert_check {
+  width: fit-content;
+  display: inline-block;
+  margin-top: 11px;
+}
+
+.cert_JPG_txt {
+  /* position: absolute; */
+  bottom: 24px;
+  font-size: 15px;
+}
+
+/* .cert_upload_btn {
+  width: fit-content;
+} */
+
+.form-check-label {
+  display: inline-block;
+}
+
+.form-item {
+  margin-bottom: 24px;
+  /* position: relative; */
+}
+.form-item > label {
+  display: block;
+  margin-left: -10px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+/* ..cert_JPG_txt{
+  max-width: 360px;
+} */
+
+.cert-grp .certStudy_A {
+  width: 235px;
+}
+
+.studyA_studyB {
+  background-color: #ced4da;
+  height: 1px;
+  width: 25px;
+  margin-top: 18px;
+}
+
+.cert-grp .certStudy_B {
+  width: 235px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgb(218, 223, 225);
+  padding: 10px 12px;
+  font-size: 14px;
+  /* max-width: 360px; */
+}
+.subject-dropdown {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgb(218, 223, 225);
+  padding: 10px 12px;
+  font-size: 14px;
+  /* max-width: 360px; */
+}
+
+.certificate__upload {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  width: 730px;
+}
+
+.upload__logo {
+  display: flex;
+  align-items: start;
+}
+
+.upload__text {
+  margin-left: 10px;
+}
+.upload__text > h4 {
+  font-size: 18px;
+}
+
+.upload__text > h5 {
+  font-size: 14px;
+  color: #6f7986;
+}
+
+/* .certificate__upload .upload__button > input[type="file"] {
+  display: none;
+} */
+
+/* .upload__button > label {
+  margin-right: 16px;
+  height: 40px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  border: 0;
+  align-items: center;
+  min-height: 32px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 2px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  cursor: pointer;
+  outline: 0;
+  color: #3bb3bd;
+  border: 1px solid #e3e5e6;
+  padding: 8px 16px;
+} */
+
+.add__cerficicate {
+  display: flex;
+  align-items: center;
+  color: #3bb3bd;
+}
+
+.add__cerficicate .fa-plus {
+  border: 1px solid #3bb3bd;
+  width: 20px;
+  height: 20px;
+  padding-top: 3px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #3bb3bd;
+  color: #fff;
+  font-size: 12px;
+}
+
+.add__cerficicate,
+.fa-plus:hover {
+  cursor: pointer;
+}
+
+.about__button--back {
+  color: #3bb3bd;
+  background: transparent;
+  border: 1px solid #3bb3bd !important;
+  padding: 8px 22px !important;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about__button--next {
+  padding: 8px 22px !important;
+  margin-top: 20px;
+  background-color: #3bb3bd;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input_fields_wrap {
+  position: relative;
+}
+
+#cert_form .input_fields_wrapcert label {
+  width: fit-content;
+  margin-left: -10px;
+  margin-bottom: -6px;
+  font-weight: 550;
+  color: #4e4970;
+}
+.input_fields_wrapcert .cert-grp > label {
+  margin-left: 0;
+}
+
+.remove_field {
+  color: black;
+  cursor: pointer;
+}
+
+/* validation style */
+
+.cert-grp {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.cert-grp small {
+  visibility: hidden;
+  color: #e74c3c;
+  position: absolute;
+}
+
+.cert-grp.error small {
+  visibility: visible;
+}
+
+.cert-grp.error input {
+  border-color: #e74c3c;
+}
+.cert-grp.error select {
+  border-color: #e74c3c;
+}
+
+.cert-grp.success input {
+  border-color: #09c372;
+}
+
+.cert-grp.success select {
+  border-color: #09c372;
+}
+
+.cert-grp > label {
+  display: block;
+  font-size: 14px;
+  width: fit-content;
+  color: #4e4947;
+  margin-bottom: -8px;
+
+  margin-left: -14px !important;
+  font-weight: 550 !important;
+}
+
+.cert-grp > input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+/* Certification Section Ends Here */

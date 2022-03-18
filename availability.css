@@ -1,0 +1,225 @@
+  
+  /* Availability Section Starts Here */
+  
+  
+  .avalibality__section{
+      background-color: #EDF0F0;
+      width: 100%;
+  }
+  
+  .avalibality__section .container{
+      background: white;
+      width: 100%;
+      max-width: 800px;
+      padding: 32px;
+      margin: 0px auto;
+      border-radius: 4px;
+      height: auto;
+  }
+  
+  .avalibality__section .timezone{
+      color: #424447;
+      font-weight: 400;
+      font-size: 20px;
+  }
+  
+  .aval_grp > .chsTMZN {
+    margin-bottom: -15px !important;
+  } 
+
+  .avalibality__section .zone_para{
+      font-size: 15px;
+      color: #827C7B;
+  }
+  
+  .avalibality__section .form-group{
+      margin-bottom: 30px;
+  }
+  
+  .avalibality__section.certificate__requirement{
+      padding: 15px  20px;
+      background-color: #E1FAE3;
+      border-radius: 5px;
+  }
+  
+  .avalibality__section .certificate__requirement .fa-arrow-up{
+      color: #2ABB36;
+      font-size: 14px;
+      margin-right: 10px;
+  }
+  .avalibality__section .certificate__requirement .require_heading{
+      display: flex;
+      align-items: start;
+  }
+  
+  .avalibality__section .certificate__requirement .require_heading > h5{
+      font-size: 14px;
+      color: #2ABB36;
+  }
+  
+  .avalibality__section .certificate__requirement .require_heading > p{
+      font-size: 14px;
+  }
+
+  .avalibality__section .aval_grp > label {
+    width: fit-content;
+    /* font-weight: 550 !important; */
+    /* font-size: 15px !important; */
+    margin-bottom: -10px !important;
+    color: #424447;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .avalibality__section .form-item{
+      margin-bottom: 24px;
+      /* position: relative; */
+  }
+  .avalibality__section .form-item > label{
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+      font-weight: 500;
+  }
+  
+  
+  .avalibality__section .form-control option{
+  padding: 0 30px;
+  }
+  .avalibality__section.form-control {
+    position: relative;
+  }
+  
+.fa-plus{
+   font-weight: lighter;
+   color: #8A959E;
+   cursor: pointer;
+   position: absolute;
+   top: 0;
+   right: -1.5rem;
+  } 
+
+  .aval-slct{
+    width: 120px !important;
+  }
+  
+  .avalibality__section .about__button--back{
+      color: #3BB3BD;
+      background: transparent;
+      border: 1px solid #3BB3BD !important;
+      padding: 8px 22px !important;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: bold;
+  }
+  
+  .avalibality__section .about__button--next{
+      padding: 8px 22px !important;
+      margin-top: 20px;
+      background-color: #3BB3BD;
+      border: 0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .avalibality__section .input_fields_wrap0{
+      position: relative;
+    }
+    
+    .avalibality__section .remove_field0{
+      position: absolute;
+      right:0;top:15px;
+      left: 17.5rem;
+      cursor: pointer;
+    }
+    .avalibality__section .input_fields_wrap1{
+      position: relative;
+    }
+    
+    .avalibality__section .remove_field1{
+      position: absolute;
+      right:0;top:15px;
+      left: 17.5rem;
+    }
+  
+    .avalibality__section .input_fields_wrap2{
+      position: relative;
+    }
+    
+    .avalibality__section .remove_field2{
+      position: absolute;
+      right:0;top:15px;
+      left: 17.5rem;
+    }
+    .avalibality__section .input_fields_wrap3{
+      position: relative;
+    }
+    
+    .avalibality__section .remove_field3{
+      position: absolute;
+      right:0;top:15px;
+      left: 17.5rem;
+    }
+    .avalibality__section .input_fields_wrap4{
+      position: relative;
+    }
+    
+    .avalibality__section .remove_field4{
+      position: absolute;
+      right:0;top:15px;
+      left: 17.5rem;
+    }
+    .avalibality__section .input_fields_wrap5{
+      position: relative;
+    }
+    
+    .avalibality__section .remove_field5{
+      position: absolute;
+      right:0;top:15px;
+      left: 17.5rem;
+    }
+
+
+    /* //////////////// */
+
+    .aval-grp > label {
+      margin-bottom: -15px;
+      margin-left: -10px;
+    }
+
+
+    .aval-grp {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    
+    .aval-grp small {
+      visibility: hidden;
+      color: #e74c3c;
+      position: absolute;
+      padding-bottom: 20px;
+    }
+    
+    .aval-grp.error small {
+      visibility: visible;
+    }
+    
+    .aval-grp.error input {
+      border-color: #e74c3c;
+    }
+    .aval-grp.error select {
+      border-color: #e74c3c;
+    }
+    
+    .aval-grp.success input {
+      border-color: #09c372;
+    }
+    
+    .aval-grp.success select {
+      border-color: #09c372;
+    }
+
+    /* //////////////// */
+
+  /* Availability Section Ends Here */

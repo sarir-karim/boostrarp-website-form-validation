@@ -1,0 +1,119 @@
+.navbar .navbar-brand {
+    font-size: 22px;
+  }
+  .navbar-brand i {
+    border-right: 1px solid #e8e8e8;
+    padding-right: 15px;
+    height: 5vh;
+  }
+  
+  .navbar-brand span {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav__icons {
+    font-size: 23px;
+    color: #9fa8af;
+  }
+  
+  .navbar .nav__icons .fa-user-circle {
+    margin-left: 15px;
+  }
+  
+  .navbar__2 {
+    background-color: #384047;
+    padding: 10px 0 !important;
+  }
+  
+  .navbar__main {
+    padding: 0 100px !important;
+  }
+  .navbar__main .nav__btn {
+    display: flex;
+    align-items: center;
+    color: #848e97;
+  }
+  
+  .navbar__main .nav__btn .btn__num {
+    border: 1px solid #fff;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 1px;
+    font-size: 14px;
+    /* background: #fff; */
+    color: #848e97;
+    margin-left: 30px;
+  }
+  
+  .navbar__main .nav__btn .btn__about {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .navbar__main .nav__btn .fa-angle-right {
+    color: #6f757b;
+  }
+  
+  .active1{
+      background: #fff;
+    }
+  
+    .active{
+      color: white;
+      
+    }
+
+
+    .submited__section .timezone{
+        color: #424447;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .submited__section .zone_para{
+        font-size: 15px;
+        color: #827C7B;
+    }
+    
+    .submited__section .form-group{
+        margin-bottom: 30px;
+    }
+    
+
+    .submited__section{
+        background-color: #EDF0F0;
+        width: 100%;
+    }
+    
+    .submited__section .container{
+        background: white;
+        width: 90%;
+        max-width: 800px;
+        padding: 32px;
+        margin: 0px auto;
+        border-radius: 4px;
+        height: 100vh;
+    }
+
+    .certificate__requirement{
+        padding: 20px 0 0 20px;
+        background-color: #EBF7F8;
+        border-radius: 5px;
+        display: flex;
+        align-items: start;
+    }
+    .certificate__requirement .fa-clock{
+        color: #66C4CC;
+        font-size: 16px;
+    }
+    .certificate__requirement .require_heading > h5{
+        font-size: 14px;
+    }
+    
+    .certificate__requirement .require_heading > p{
+        font-size: 14px;
+    }
+    

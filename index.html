@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Page Form Validation</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!--photo.css  -->
+
+    <link rel="stylesheet" href="./photo.css">
+
+    <!-- certificate css -->
+    <link rel="stylesheet" href="./certificate.css">
+    <link rel="stylesheet" href="./description.css">
+    <link rel="stylesheet" href="./availability.css">
+    <link rel="stylesheet" href="./video.css">
+    <!-- css link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js  "></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js  "></script>
+    <script src="./about.js"></script>
+</head>
+
+
+<body>
+
+
+    <!------------------------------------------- About Section Starts Here ------------------------------------------->
+
+    <section class="About_Section">
+
+        <!------------------------------------------ Topbar Starts Here ------------------------------------------>
+
+        <nav class="navbar navbar-light bg-white justify-content-between m-2">
+            <a class="navbar-brand1"><i class="fa fa-book"><span>Preply</span></i></a>
+
+            <div class="nav__icons">
+                <i class="fa fa-question-circle"></i>
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Topbar Ends Here ------------------------------------------>
+
+        <!------------------------------------------ Navbar Starts Here ------------------------------------------>
+
+
+        <nav class="navbar navbar__2 navbar-light ">
+            <div class="container navbar__main">
+                <div class="nav__btn">
+                    <span class="btn__num active1">1</span>
+                    <span class="btn__about active">About</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">2</span>
+                    <span class="btn__about">Photo</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">3</span>
+                    <span class="btn__about">Certification</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">4</span>
+                    <span class="btn__about">Description</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">5</span>
+                    <span class="btn__about">Video</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">6</span>
+                    <span class="btn__about">Availability</span>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Navbar Ends Here ------------------------------------------>
+
+
+
+
+        <div class="about__container pb-5">
+            <div class="container rounded">
+                <form class="about__form">
+                    <h4 class="about_title">About</h4>
+                    <div class="form-grp">
+                        <label for="first_name" class="label_text">First Name</label>
+                        <input type="text" class="form-control1" value="" name="fname" id="user_fname" />
+                        <small>This field is required</small>
+                    </div>
+                    <div class="form-grp">
+                        <label for="last_name" class="label_text">last name</label>
+                        <input type="text" id="user_lname" value="" name="lname" class="form-control1" />
+                        <small>This field is required</small>
+                    </div>
+
+                    <div class="form-grp">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control1" name="email" id="user_email" value="" />
+                        <small>This field is required</small>
+                    </div>
+
+                    <div class="input-group w-100 about__select form-grp">
+                        <label for="country">Country of origin</label>
+                        <select name="user_country" class="form-control1 country_select rounded w-100 "
+                            id="user_country">
+                            <option selected hidden disabled value="" placeholder>
+                                select...
+                            </option>
+                            <option value="dropdown1">dropdown 1</option>
+                            <option value="dropdown2">dropdown 2</option>
+                            <option value="dropdown3">dropdown 3</option>
+                        </select>
+                        <small>This field is required</small>
+                    </div>
+
+                    <div class="row input_fields_wrap">
+
+                        <div class="input-group  col-6">
+                            <div class="form-grp w-100">
+                                <label for="language">Languages spoken</label>
+                                <select name="language" class="form-control1 subject-dropdown rounded w-100"
+                                    id="user_language">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option>
+                                    <option value="dropdown1">dropdown 1</option>
+                                    <option value="dropdown2">dropdown 2</option>
+                                    <option value="dropdown3">dropdown 3</option>
+                                </select>
+                                <small>This field is required</small>
+                            </div>
+                        </div>
+
+                        <div class="input-group  col-6">
+                            <div class="form-grp w-100">
+                                <label for="level">Level</label>
+                                <select name="level" class="form-control1 subject-dropdown rounded w-100"
+                                    id="user_level">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option>
+                                    <option value="dropdown1">dropdown 1</option>
+                                    <option value="dropdown2">dropdown 2</option>
+                                    <option value="dropdown3">dropdown 3</option>
+                                </select>
+                                <small>This field is required</small>
+                            </div>
+                        </div>
+
+
+                        <h4 class="pl-2 font-weight-light select__heading add_field_button">
+                            Add another language
+                        </h4>
+                    </div>
+
+                    <div class="form-grp">
+                        <label for="certificate">Subject taught</label>
+                        <select name="certificate" class="form-control1  certificate_select" id="user_certificate"
+                            required>
+                            <option selected hidden disabled value="" placeholder>
+                                select...
+                            </option>
+                            <option value="dropdown1">dropdown 1</option>
+                            <option value="dropdown2">dropdown 2</option>
+                            <option value="dropdown3">dropdown 3</option>
+                        </select>
+                        <small>This field is required</small>
+                    </div>
+
+                    <div class="certificate__requirement mb-3">
+                        <i class="fa fa-graduation-cap"></i>
+                        <div class="require_heading ml-3">
+                            <h5>A teaching certificate or a diploma is required</h5>
+                            <p>
+                                To teach with Preply, you need to provide at least one document that proves you’re
+                                qualified. We accept certificates to teach any language and diplomas in education or in
+                                the subject you teach.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form-grp">
+                        <label for="hourly_rate" class="label_text">Hourly rate</label>
+                        <input type="number" class="form-control1" id="user_rate" name="rate" placeholder="8"
+                            value="" />
+                        <span class="dollar_icon">$</span>
+                        <p class="rate-heading">New tutors charge $8 for this subject to get students faster. You
+                            can change <br> your rate anytime.
+                        </p>
+                        <small>The field is required</small>
+                    </div>
+
+
+                    <div class="input-group w-100 about__select mt-4 form-grp">
+                        <label for="teaching_experience">Describe your teaching experience</label>
+                        <select name="user_experience" class="form-control teaching_select rounded w-100"
+                            id="user_experience">
+                            <option selected hidden disabled value="" placeholder>
+                                select...
+                            </option>
+                            <option value="dropdown1">dropdown 1</option>
+                            <option value="dropdown2">dropdown 2</option>
+                            <option value="dropdown3">dropdown 3</option>
+                        </select>
+                        <small>This field is required</small>
+                    </div>
+
+                    <div class="input-group form-grp w-100 about__select mt-4">
+                        <label for="current_situation">Describe your current situation</label>
+                        <select name="situation" class="form-control situation_select rounded w-100"
+                            id="user_situation">
+                            <option selected hidden disabled value="" placeholder>
+                                select...
+                            </option>
+                            <option value="dropdown1">dropdown 1</option>
+                            <option value="dropdown2">dropdown 2</option>
+                            <option value="dropdown3">dropdown 3</option>
+                        </select>
+                        <small>This field is required</small>
+                    </div>
+
+                    <div class="country__wrapper">
+                        <div class=" form-grp">
+
+                            <label for="country_code">Phone number</label>
+                            <select name="code" id="user_countrycode" class="country__select country_selector">
+
+                                <option value="" id="select-country pt-3 pb-3 pr-3">
+                                <option value="US">US</option>
+                                <option value="PK">PK</option>
+                                <option value="GB">GB</option>
+                                <option value="SG">SG</option>
+                                <option value="TH">TH</option>
+                                </option>
+                            </select>
+
+                            <small style="margin-top: 42px; margin-left: -70px;">This field is required</small>
+                        </div>
+
+                        <div class="form-grp">
+                            <input type="number" name="tel" id="user_phonenumber" class="form-control " value=""
+                                placeholder="+923126700">
+                            <small style="margin-top: -19px; margin-left: 1px;">This field is required</small>
+                        </div>
+
+                        <p class="rate-heading">
+                            Recieve SMS-notifications about new messages from students
+                        </p>
+                    </div>
+
+                    <div class="form-grp mt-2">
+                        <label class="form-check-label" for="check-box">Age</label>
+                        <input type="checkbox" class="about_check mr-2" name="check" id="user_check"> <span>I confirm
+                            I’m over 18</span>
+                        <small>You must be 18 or older to teach with Preply. Check the box if you meet our age <br>
+                            requirement.</small>
+                    </div>
+
+                    <button type="submit" id="about-next" class="about__button--next btn">Next</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <script>
+
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrap");
+            var add_button = $(".add_field_button");
+            var x = 1;
+
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+                    <div class="row input_fields_wrap ml-1  mb-3">
+                        <div class="input-group col-6">
+                          <label for="language">Languages spoken</label>
+                          <select name="" class="form-control1 subject-dropdown rounded w-100" id="language" required>
+                            <option selected hidden disabled value="" placeholder >
+                              select...
+                            </option>
+                            <option value="">dropdown 1</option>
+                            <option value="">dropdown 2</option>
+                            <option value="">dropdown 3</option>
+                          </select>
+                        </div>
+                        <div class="input-group col-6 d-flex align-items-end">
+                          <label for="level">Level</label>
+                          <select name="" class="form-control subject-dropdown rounded w-100" id="level" required>
+                            <option selected hidden disabled value="" placeholder >
+                              select...
+                            </option>
+                            <option value="">dropdown 1</option>
+                            <option value="">dropdown 2</option>
+                            <option value="">dropdown 3</option>
+                          </select>
+                        </div>
+                        <i class="fa fa-trash remove_field"></i>
+                      </div>
+              
+                    `)
+
+                    x++
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field", function (e) {
+                e.preventDefault();
+                $(this).parent('div').remove();
+                x--
+            })
+        })
+    </script>
+
+
+    <!------------------------------------------- About Section Ends Here ------------------------------------------->
+
+
+
+
+    <!------------------------------------------- Photo Section Starts Here ------------------------------------------->
+
+    <section class="Photo_Section">
+
+        <!------------------------------------------ Topbar Starts Here ------------------------------------------>
+
+        <nav class="navbar navbar-light bg-white justify-content-between m-2">
+            <a class="navbar-brand1"><i class="fa fa-book"><span>Preply</span></i></a>
+
+            <div class="nav__icons">
+                <i class="fa fa-question-circle"></i>
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Topbar Ends Here ------------------------------------------>
+
+        <!------------------------------------------ Navbar Starts Here ------------------------------------------>
+
+
+        <nav class="navbar navbar__2 navbar-light ">
+            <div class="container navbar__main">
+                <div class="nav__btn">
+                    <span class="btn__num ">1</span>
+                    <span class="btn__about">About</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num active1">2</span>
+                    <span class="btn__about active">Photo</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">3</span>
+                    <span class="btn__about">Certification</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">4</span>
+                    <span class="btn__about">Description</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">5</span>
+                    <span class="btn__about">Video</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">6</span>
+                    <span class="btn__about">Availability</span>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Navbar Ends Here ------------------------------------------>
+
+
+        <div class="mainSection">
+            <div class="container">
+                <form class="subContainer" id="myform" name="photoForm">
+                    <div class="profileHeading">
+                        <h4>Profile photo</h4>
+                    </div>
+
+                    <!-- form name -->
+                    <!-- Photo Validation -->
+
+                    <div class="contentContainer">
+                        <div class=" leftPanel">
+                            <h3>Make a great first impression</h3>
+                            <p>Tutors who look friendly and professional get the most students</p>
+
+
+                            <div class="uploadBtnWrapper photo_div">
+                                <input type="file" id="file" name="file" accept="image/*" required>
+                                <label for="file">Upload photo</label>
+                                <span class="w-50">JPG or PNG format
+                                    <br>
+                                    Maximum 5 MB
+                                </span>
+                                <img id="preview" width="50%">
+                            </div>
+
+
+                            <!-- Drop Img Container -->
+
+                            <div class="dragImgContainer">
+                                <div class="dragImgInnerContainer photo_grp drop_zone drop_zone_over photo_div">
+
+                                    <span class="drop_zone_prompt">Drag and drop your photo here</span>
+
+                                    <input data-qa-id="drag-and-drop-area" accept="image/jpeg,image/png" type="file"
+                                        name="myFile" class="drop_zone_input" autocomplete="off" id="drag_drop"
+                                        tabindex="-1">
+
+
+
+                                    <!-- <div class="drop_zone_thumb" data-label="myfile.txt"></div> -->
+
+                                    <!-- <small>This field is requried</small> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightPanel">
+                            <div class="guidelinesWrapper">
+                                <p>Tips for an amazing photo</p>
+                                <div class="imgsWrapper">
+                                    <div>
+                                        <img class="img" src="./img/img1.png">
+                                        <img class="img" src="./img/img2.png">
+                                        <img class="img" src="./img/Img3.png">
+                                    </div>
+                                </div>
+                                <div class="guidelinesSubWrapper">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i>Smile and look at the camera</li>
+                                        <li><i class="fa fa-check"></i>Frame your head and shoulders</li>
+                                        <li><i class="fa fa-check"></i>Your photo is centered and upright</li>
+                                        <li><i class="fa fa-check"></i>Use neutral lighting and background</li>
+                                        <li><i class="fa fa-check"></i>Your face and eyes are fully visible <br>
+                                            (except for religious reasons)
+                                        </li>
+                                        <li><i class="fa fa-check"></i>Avoid logos or contact information</li>
+                                        <li><i class="fa fa-check"></i>You are the only person in the photo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentFooterBtns">
+                        <button class="FooterBackbtn rounded" id="photo-back">Back</button>
+
+                        <!-- on Submit -->
+                        <button class="FooterNextbtn ml-2 rounded" id="photo-next" type="submit">Next</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!------------------------------------------- Photo Section Ends Here ------------------------------------------->
+
+
+
+    <!-------------------------------------- Certification Section Starts Here -------------------------------------->
+
+    <section class="Certification_Section">
+
+
+        <!------------------------------------------ Topbar Starts Here ------------------------------------------>
+
+        <nav class="navbar navbar-light bg-white justify-content-between m-2">
+            <a class="navbar-brand1"><i class="fa fa-book"><span>Preply</span></i></a>
+
+            <div class="nav__icons">
+                <i class="fa fa-question-circle"></i>
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Topbar Ends Here ------------------------------------------>
+
+        <!------------------------------------------ Navbar Starts Here ------------------------------------------>
+
+
+        <nav class="navbar navbar__2 navbar-light ">
+            <div class="container navbar__main">
+                <div class="nav__btn">
+                    <span class="btn__num ">1</span>
+                    <span class="btn__about ">About</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">2</span>
+                    <span class="btn__about">Photo</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num active1">3</span>
+                    <span class="btn__about active">Certification</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">4</span>
+                    <span class="btn__about">Description</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">5</span>
+                    <span class="btn__about">Video</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">6</span>
+                    <span class="btn__about">Availability</span>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Navbar Ends Here ------------------------------------------>
+
+
+
+        <div class="certificate pb-5">
+            <div class="container">
+                <div class="certification-container">
+                    <h3 class="certification-header">Teaching Certification</h3>
+                    <p class="certification-p">
+                        Describe and upload your teaching certificates. If you don't have
+                        any, proceed to the next page and provide your diploma instead
+                    </p>
+
+                    <div class="certificate__requirement mb-3">
+                        <i class="fa fa-graduation-cap"></i>
+                        <div class="require_heading ml-3">
+                            <h5>A teaching certificate or a diploma is required</h5>
+                            <p>
+                                Do you have both a certificate to teach a language and a diploma
+                                in education or in the subject you teach? Even better! Complete
+                                this step, and then add your diploma on the next page.
+                            </p>
+                        </div>
+                    </div>
+
+                    <form class="form" id="cert_form">
+                        <div class="input_fields_wrapcert">
+                            <div class="form-item">
+
+                                <div class="cert-grp">
+                                    <label for="subject" sty>Subject</label>
+                                    <select name="cert_subject" class="form-control subject-dropdown" value=""
+                                        id="cert_subject">
+                                        <option selected hidden disabled value="" placeholder>
+                                            select...
+                                        </option>
+                                        <option value="dropdown1">dropdown 1</option>
+                                        <option value="dropdown2">dropdown 2</option>
+                                        <option value="dropdown3">dropdown 3</option>
+                                    </select>
+                                    <small>This Field is required</small>
+                                </div>
+
+                            </div>
+                            <div class="form-item">
+
+                                <div class="cert-grp">
+                                    <label for="certificate">Certificate</label>
+                                    <select name="cert_certificate" class="form-control subject-dropdown"
+                                        id="cert_certificate">
+                                        <option selected hidden disabled value="" placeholder>
+                                            select...
+                                        </option>
+                                        <option value="dropdown1">dropdown 1</option>
+                                        <option value="dropdown2">dropdown 2</option>
+                                        <option value="dropdown3">dropdown 3</option>
+                                    </select>
+                                    <small>This Field is required</small>
+                                </div>
+
+                            </div>
+                            <div class="form-item cert-grp">
+                                <label for="description">Description</label>
+                                <div class="input-wrapper">
+                                    <input class="form-input form-control" value="" name="cert_description"
+                                        id="cert_description" type="text" />
+                                    <small>This Field is required</small>
+                                </div>
+                            </div>
+                            <div class="form-item cert-grp">
+                                <label for="issued_by">Issued By</label>
+                                <div class="input-wrapper">
+                                    <input class="form-input form-control" value="" name="cert_issuedby"
+                                        id="cert_issuedby" type="text" />
+                                    <small>This Field is required</small>
+                                </div>
+                            </div>
+                            <div class="form-item cert-grp">
+                                <label for="years_of_study">Years of Study</label>
+                                <div class="input-wrapper d-flex">
+                                    <div class="cert-grp ">
+                                        <select class="form-control certStudy_A" name="cert_study1" id="cert_study1"
+                                            title="start">
+                                            <option selected hidden disabled value="" placeholder>
+                                                select...
+                                            </option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                        </select>
+                                        <small>This Field is required</small>
+                                    </div>
+                                    <span class="studyA_studyB"> </span>
+                                    <div class="cert-grp">
+                                        <select class="form-control certStudy_B" name="cert_study2" id="cert_study2">
+                                            <option selected hidden disabled value="" placeholder>
+                                                select...
+                                            </option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                        </select>
+                                        <small ml-5>This Field is required</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="certificate__upload mt-4">
+                                <div class="upload__logo">
+                                    <i class="fa fa-file"></i>
+                                    <div class="upload__text">
+                                        <h4>Get a "Certificate verified" badge</h4>
+                                        <h5>
+                                            Upload your certificate to increase the credibility of
+                                            your profile
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="upload__button mt-2 cert-grp ">
+                                    <input type="file" id="cert_file" name="cert_file" accept="image/*" />
+                                    <span class="cert_JPG_txt">JPG or PNG format; maximum size of 20MB.</span>
+                                    <img id="preview" width="50%">
+                                    <br>
+                                    <small>This field is required</small>
+                                </div>
+                                
+                            </div>
+
+                            <div class="add__cerficicate mt-4">
+                                <i class="fa fa-plus"></i>
+                                <span class="ml-2 add_field_buttoncert">
+                                    Add another certificate
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="form-check cert-grp">
+                                <input class="form-check-input" type="checkbox" value="" id="cert_check" />
+                                <label class="form-check-label text-danger" for="invalidCheck">
+                                    I don’t have any teaching certification yet
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must comfirm before submitting.
+                                </div>
+                                <small>This Field is required</small>
+                            </div>
+                        </div>
+
+                        <div class="certificate__buttons">
+                            <button class="about__button--back btn" id="certification-back">Back</button>
+                            <button type="submit" class="about__button--next btn" id="certification-next">Next</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrapcert");
+            var add_button = $(".add_field_buttoncert");
+            var x = 1;
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+              <div class="input_fields_wrapcert">
+                <div class="form-item form-group ">
+                  <label for="">Subject</label>
+                  <div>
+                    <select name="" class="form-control subject-dropdown" id="">
+                      <option selected hidden disabled value="" placeholder>
+                        select...
+                      </option>
+                      <option value="">dropdown 1</option>
+                      <option value="">dropdown 2</option>
+                      <option value="">dropdown 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-item form-group">
+                  <label for="">Certificate</label>
+                  <div>
+                    <select name="" class="form-control subject-dropdown" id="">
+                      <option selected hidden disabled value="" placeholder>
+                        select...
+                      </option>
+                      <option value="">dropdown 1</option>
+                      <option value="">dropdown 2</option>
+                      <option value="">dropdown 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-item form-group">
+                  <label for="">Description</label>
+                  <div class="input-wrapper">
+                    <input class="form-input form-control" type="text" />
+                  </div>
+                </div>
+                <div class="form-item form-group">
+                  <label for="">Issued By</label>
+                  <div class="input-wrapper">
+                    <input class="form-input form-control" type="text" />
+                  </div>
+                </div>
+                <div class="form-item form-group">
+                  <label for="">Years of Study</label>
+                  <div class="input-wrapper d-flex">
+                    <div class="">
+                      <select class="form-control" name="" id="" title="start">
+                        <option selected hidden disabled value="" placeholder>
+                          select...
+                        </option>
+                        <option value="">2002</option>
+                        <option value="">2003</option>
+                        <option value="">2004</option>
+                      </select>
+                    </div>
+                    __
+                    <div>
+                      <select class="form-control" name="" id="">
+                        <option selected hidden disabled value="" placeholder>
+                          select...
+                        </option>
+                        <option value="">2002</option>
+                        <option value="">2003</option>
+                        <option value="">2004</option>
+                      </select>
+                    </div>
+                  </div>
+  
+                  <div class="certificate__upload mt-4">
+                    <div class="upload__logo">
+                      <i class="fa fa-file"></i>
+                      <div class="upload__text">
+                        <h4>Get a "Certificate verified" badge</h4>
+                        <h5>
+                          Upload your certificate to increase the credibility of
+                          your profile
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="upload__button mt-2">
+                      <input type="file" id="file" accept="image/*" />
+                      <label for="file">Upload</label>
+                      <span>JPG or PNG format; maximum size of 20MB.</span>
+                    </div>
+                  </div>
+  
+                </div>
+                <i class="fa fa-trash remove_fieldcert"> Delete Certificate</i>
+              </div>
+              
+                    `);
+
+                    x++;
+                }
+            });
+
+            $(wrapper).on("click", ".remove_fieldcert", function (e) {
+                e.preventDefault();
+                $(this).parent("div").remove();
+                x--;
+            });
+        });
+    </script>
+
+
+
+
+
+    <!---------------------------------------- Certification Section Ends Here ---------------------------------------->
+
+
+
+
+    <!------------------------------------ Description Section Section Starts Here ------------------------------------>
+
+    <section class="Description_Section">
+
+
+        <!------------------------------------------ Topbar Starts Here ------------------------------------------>
+
+        <nav class="navbar navbar-light bg-white justify-content-between m-2">
+            <a class="navbar-brand1"><i class="fa fa-book"><span>Preply</span></i></a>
+
+            <div class="nav__icons">
+                <i class="fa fa-question-circle"></i>
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Topbar Ends Here ------------------------------------------>
+
+        <!------------------------------------------ Navbar Starts Here ------------------------------------------>
+
+
+        <nav class="navbar navbar__2 navbar-light ">
+            <div class="container navbar__main">
+                <div class="nav__btn">
+                    <span class="btn__num ">1</span>
+                    <span class="btn__about ">About</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">2</span>
+                    <span class="btn__about">Photo</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">3</span>
+                    <span class="btn__about">Certification</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num active1">4</span>
+                    <span class="btn__about active">Description</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">5</span>
+                    <span class="btn__about">Video</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">6</span>
+                    <span class="btn__about">Availability</span>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Navbar Ends Here ------------------------------------------>
+
+
+
+        <div class="mainSection">
+            <div class="container">
+                <div class="subContainer">
+                    <div class="profileHeading">
+                        <h4>Profile description</h4>
+                        <p>Update or create a new profile headline and description. It will appear on your tutor card on
+                            the
+                            "Find tutors" page.
+                        </p>
+                    </div>
+                    <form class="form">
+                        <div class="innerContainer">
+                            <div class="imgBoxWrapper">
+                                <h3>Description for English-speaking students</h3>
+                                <div class="imgContentWrapper">
+
+                                    <img src="./img/img1.png">
+
+                                    <div class="imgDescriptionContainer desc-grp">
+                                        <label for="name">Name here</label>
+                                        <input type="text" class="outline-primary" name="desc_name" id="desc_name"
+                                            value="" placeholder="write your headline in English">
+
+                                        <p>Good example: "Certified
+                                            tutor with 5 years of experience"</p> <br>
+                                        <small class="desc_input_err">This field is required!</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <form class="innerTextContainer">
+
+                                <div class="contentSubContainer desc-grp">
+                                    <label for="introduce">Introduce yourself and share briefly about your
+                                        interests</label>
+                                    <textarea type="text" name="desc_intro1" id="desc_intro1" value=""
+                                        placeholder="Hello,my name is...and i'm from..."
+                                        id="desc_introduce1"></textarea>
+                                    <small> 400 characters minimum.</small>
+                                </div>
+
+                                <div class="contentSubContainer desc-grp">
+                                    <label>Describe your teaching experience, certification and methodology</label>
+                                    <textarea type="text" name="desc_intro2" id="desc_intro2" value=""
+                                        placeholder="I have 5 years of teaching experience. I'm TEFL Certified, and my classes are..."></textarea>
+                                    <small> 400 characters minimum.</small>
+                                </div>
+
+                                <div class="contentSubContainer desc-grp">
+                                    <label>Motivate students to book a trial lesson with you</label>
+                                    <textarea type="text" name="desc_intro3" id="desc_intro3" value=""
+                                        placeholder="Book a trial lesson with me so we can discuss your goals and I can help you reach them..."></textarea>
+                                    <small> 400 characters minimum.</small>
+                                </div>
+
+                        </div>
+
+                        <p>400 characters minimum. 0 characters currently.</p>
+
+                        <div class="contentFooterBtns">
+                            <button class="FooterBackbtn" id="description-back">Back</button>
+                            <button type="submit" class="FooterNextbtn ml-2" id="description-next">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!------------------------------------ Description Section Section Ends Here ------------------------------------>
+
+
+
+
+    <!------------------------------------------ Video Section Starts Here ------------------------------------------>
+
+    <section class="Video_Section">
+
+        <!------------------------------------------ Topbar Starts Here ------------------------------------------>
+
+        <nav class="navbar navbar-light bg-white justify-content-between m-2">
+            <a class="navbar-brand1"><i class="fa fa-book"><span>Preply</span></i></a>
+
+            <div class="nav__icons">
+                <i class="fa fa-question-circle"></i>
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Topbar Ends Here ------------------------------------------>
+
+        <!------------------------------------------ Navbar Starts Here ------------------------------------------>
+
+
+        <nav class="navbar navbar__2 navbar-light ">
+            <div class="container navbar__main">
+                <div class="nav__btn">
+                    <span class="btn__num ">1</span>
+                    <span class="btn__about">About</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">2</span>
+                    <span class="btn__about">Photo</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">3</span>
+                    <span class="btn__about">Certification</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">4</span>
+                    <span class="btn__about">Description</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num active1">5</span>
+                    <span class="btn__about  active">Video</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">6</span>
+                    <span class="btn__about">Availability</span>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Navbar Ends Here ------------------------------------------>
+
+        <div class="mainSection">
+            <div class="container">
+                <div class="subContainer">
+                    <div class="profileHeading">
+                        <h4>Video introduction</h4>
+                    </div>
+                    <div class="contentContainer">
+                        <div class="leftPanel">
+                            <div class="innerLeftPanel">
+                                <h3><span>Record your video</span></h3>
+                                <p>Now introduce your self to students! You can watch and re-record your intro before
+                                    you
+                                    submit
+                                    it.</p>
+                                <div class="videoWrapper">
+                                    <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+                                    <video width="448px" height="250px" src=".Video/Preply-Intro.mp4" autoplay
+                                        controls></video>
+                                </div>
+                                <div class=" recordingBtnWrapper ">
+                                    <button class="alert ">
+                                        <i class="fa fa-video recordingIcon "></i>
+                                        Start recording
+                                    </button>
+                                </div>
+                                <div class="belowRcrdngBtn video-grp">
+                                    <h3>Or paste a link to your video</h3>
+                                    <p>Learn how to upload videos to Youtube or Vimeo</p>
+                                    <input type="text " name="video_lnk" id="video_lnk"> <br>
+                                    <small>This field is required</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightPanel ">
+                            <div class="guidelinesWrapper ">
+                                <span>
+                                    <h3>Tips for a great video</h3>
+                                </span>
+                                <div class="guidelinesSubWrapper ">
+                                    <p>Technical</p>
+                                    <ul>
+                                        <li><i class="fa fa-check "></i>Keep your video between 30 seconds and 2 minutes
+                                            long
+                                        </li>
+                                        <li><i class="fa fa-check "></i>Record in a horizontal mode</li>
+                                        <li><i class="fa fa-check "></i>Position the camera at eye level</li>
+                                        <li><i class="fa fa-check "></i>Use neutral lightning and background</li>
+                                        <li><i class="fa fa-check "></i>Your face and eyes are fully visible <br>
+                                            (except
+                                            for
+                                            religious reasons)</li>
+                                        <li><i class="fa fa-check "></i>No logos, links or contact details</li>
+                                        <li><i class="fa fa-check "></i>No slideshows or presentations</li>
+                                    </ul>
+                                    <p>Content</p>
+                                    <ul>
+                                        <li><i class="fa fa-check "></i>Greet your students warmly</li>
+                                        <li><i class="fa fa-check "></i>Highlight any teaching certification</li>
+                                        <li><i class="fa fa-check "></i>Present your tutoring experience</li>
+                                        <li><i class="fa fa-check "></i>Invite students to book a trial lesson</li>
+                                    </ul>
+                                    <p>Examples</p>
+                                    <ul style="line-height: 14px; ">
+                                    </ul>
+                                </div>
+                            </div>
+                            <li><i class="fa fa-video exampleVideoIcon "></i> <a href="https://vimeo.com "
+                                    target="blank "><span class="exampleVideoTxt ">Example 1</span></a></li>
+                        </div>
+                    </div>
+                    <div class="videoFooterBtnWrapper">
+                        <button class="FooterBackbtn" id="video-back">Back</button>
+                        <button class="FooterNextbtn ml-2" id="video-next">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------ Video Section Starts Here ------------------------------------------>
+
+
+
+
+    <!-------------------------------------- Availability Section Starts Here -------------------------------------->
+
+
+    <section class="Availability_Section">
+
+        <!------------------------------------------ Topbar Starts Here ------------------------------------------>
+
+        <nav class="navbar navbar-light bg-white justify-content-between m-2">
+            <a class="navbar-brand1"><i class="fa fa-book"><span>Preply</span></i></a>
+
+            <div class="nav__icons">
+                <i class="fa fa-question-circle"></i>
+                <i class="fa fa-user-circle"></i>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Topbar Ends Here ------------------------------------------>
+
+        <!------------------------------------------ Navbar Starts Here ------------------------------------------>
+
+
+        <nav class="navbar navbar__2 navbar-light ">
+            <div class="container navbar__main">
+                <div class="nav__btn">
+                    <span class="btn__num ">1</span>
+                    <span class="btn__about ">About</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">2</span>
+                    <span class="btn__about">Photo</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">3</span>
+                    <span class="btn__about">Certification</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">4</span>
+                    <span class="btn__about">Description</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num">5</span>
+                    <span class="btn__about">Video</span>
+                    <i class="fa fa-angle-right"></i>
+                    <span class="btn__num active1">6</span>
+                    <span class="btn__about active">Availability</span>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!------------------------------------------ Navbar Ends Here ------------------------------------------>
+
+        <div class="avalibality__section pb-5 pt-4">
+            <div class="container">
+                <h4 class="section__head mb-4">Availability</h4>
+
+                <h5 class="timezone">Set your timezone</h5>
+                <p class="zone_para">
+                    A correct timezone is essential to coordinate lessons with
+                    international students
+                </p>
+
+                <form class="form">
+                    <div class="form-item form-group aval_grp">
+                        <label class="chsTMZN" for="timezone">Choose your timezone</label>
+                        <select class="form-control input-control subject-dropdown" name="" value="" id="time_zone">
+                            <option selected hidden disabled value="" placeholder>
+                                choose ...
+                            </option>
+                            <option value="UTC +1">UTC +1</option>
+                            <option value="UTC +10:30">UTC +10:30</option>
+                            <option value="UTC +9:30">UTC +9:30</option>
+                            <option value="UTC -5">UTC -5</option>
+                            <option value="UTC +9:30 / +10:3">UTC +9:30 / +10:3</option>
+                            <option value="UTC +8:45">UTC +8:45</option>
+                        </select>
+                        <small style="margin-bottom: 10px;">This field is required</small>
+                    </div>
+
+                    <h5 class="timezone mt-5">Set your Avalibality</h5>
+                    <p class="zone_para">
+                        Avalibality shows your potential working hours, <br>
+                        students can book lessions at these times
+                    </p>
+
+                    <div class="certificate__requirement mb-3">
+                        <div class="require_heading">
+                            <i class="fa fa-arrow-up"></i>
+                            <h5 class="">Add Peak hours to get more students</h5>
+                        </div>
+                        <p>Many students book lessions between 6:00 and 9:00. Add time slots during these peak hours to
+                            increase
+                            your chance of getting booked</p>
+                    </div>
+
+
+                    <div class="form-item form-group input_fields_wrap0">
+                        <div class="monday mb-3">
+                            <input type="checkbox" class="p-3" checked> <span>Monday</span>
+                        </div>
+                        <div class="">
+                            <div class="input-wrapper d-flex flex-lg-row">
+                                <div class="aval-grp">
+                                    <select class="form-control aval-slct" name="aval_year1" id="aval_year1" title="start"
+                                        value="">
+                                        <option selected hidden disabled value="" placeholder>
+                                            select...
+                                        </option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                    </select>
+                                    <small>This field is required</small>
+                                </div>
+                                <span class="p-2">to</span>
+                                <div class="d-flex align-items-center aval-grp">
+                                    <select class="form-control aval-slct" name="aval_year2" id="aval_year2" value="">
+                                        <option selected hidden disabled value="" placeholder>
+                                            select...
+                                        </option><span><i class="fa fa-plus"></i></span>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                    </select><span><i class="fa fa-plus ml-3 mt-2 add_field_button0"></i></span>
+                                    <small>This field is required</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item form-group input_fields_wrap1">
+                        <div class="monday mb-3">
+                            <input type="checkbox" class="p-3" checked> <span>Tuesday</span>
+                        </div>
+                        <div class="input-wrapper d-flex">
+                            <div class="aval-grp">
+                                <select class="form-control aval-slct" name="aval_year3" id="aval_year3" title="start" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select>
+                                <small>This field is required</small>
+                            </div>
+                            <span class="p-2">to</span>
+                            <div class="d-flex align-items-center aval-grp">
+                                <select class="form-control aval-slct" name="aval_year4" id="aval_year4" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option><span><i class="fa fa-plus"></i></span>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select><span><i class="fa fa-plus ml-3 mt-2 add_field_button1"></i></span>
+                                <small>This field is required</small>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-item form-group input_fields_wrap2">
+                        <div class="monday mb-3">
+                            <input type="checkbox" class="p-3" checked> <span>Wednesday</span>
+                        </div>
+                        <div class="input-wrapper d-flex">
+                            <div class="aval-grp">
+                                <select class="form-control aval-slct" name="aval_year5" id="aval_year5" title="start" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select>
+                                <small>This field is required</small>
+                            </div>
+                            <span class="p-2">to</span>
+                            <div class="d-flex align-items-center aval-grp">
+                                <select class="form-control aval-slct" name="aval_year6" id="aval_year6" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option><span><i class="fa fa-plus"></i></span>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select><span><i class="fa fa-plus ml-3 mt-2 add_field_button2"></i></span>
+                                <small>This field is required</small>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-item form-group input_fields_wrap3">
+                        <div class="monday mb-3">
+                            <input type="checkbox" class="p-3" checked> <span>Thrusday</span>
+                        </div>
+                        <div class="input-wrapper d-flex ">
+                            <div class="aval-grp">
+                                <select class="form-control aval-slct" name="aval_year7" id="aval_year7" title="start" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select>
+                                <small>This field is required</small>
+                            </div>
+                            <span class="p-2">to</span>
+                            <div class="d-flex align-items-center aval-grp">
+                                <select class="form-control aval-slct" name="aval_year8" id="aval_year8" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option><span><i class="fa fa-plus"></i></span>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select><span><i class="fa fa-plus ml-3 mt-2 add_field_button3"></i></span>
+                                <small>This field is required</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-item form-group input_fields_wrap4">
+                        <div class="monday mb-3">
+                            <input type="checkbox" class="p-3" checked> <span>Friday</span>
+                        </div>
+                        <div class="input-wrapper d-flex">
+                            <div class="aval-grp">
+                                <select class="form-control aval-slct" name="aval_year9" id="aval_year9" title="start" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select>
+                                <small>This field is required</small>
+                            </div>
+                            <span class="p-2">to</span>
+                            <div class=" align-items-center aval-grp">
+                                <select class="form-control aval-slct" name="aval_year10" id="aval_year10" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option><span><i class="fa fa-plus"></i></span>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select><span><i class="fa fa-plus ml-3 mt-2 add_field_button4"></i></span>
+                                <small>This field is required</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-item form-group input_fields_wrap5">
+                        <div class="monday mb-3">
+                            <input type="checkbox" class="p-3" checked> <span>Saturday</span>
+                        </div>
+                        <div class="input-wrapper d-flex">
+                            <div class="aval-grp">
+                                <select class="form-control aval-slct" name="aval_year11" id="aval_year11" title="start" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select>
+                                <small>This field is required</small>
+                            </div>
+                            <span class="p-2">to</span>
+                            <div class="d-flex align-items-center aval-grp">
+                                <select class="form-control aval-slct" name="aval_year12" id="aval_year12" value="">
+                                    <option selected hidden disabled value="" placeholder>
+                                        select...
+                                    </option><span><i class="fa fa-plus"></i></span>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                </select><span><i class="fa fa-plus ml-3 mt-2 add_field_button5"></i></span>
+                                <small>This field is required</small>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="certificate__buttons">
+                        <button class="about__button--back btn" id="availability-back">Back</button>
+                        <button type="submit" class="about__button--next btn" id="availability-next">Complete
+                            registration</button>
+                    </div>
+            </div>
+        </div>
+
+        </form>
+
+        </div>
+
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrap0");
+            var add_button = $(".add_field_button0");
+            var x = 1;
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+        <div class="form-item form-group input_fields_wrap0">
+        <div class="monday mb-3">
+        </div>
+     <div class="">
+      <div class="input-wrapper d-flex flex-lg-row">
+        <div class="">
+          <select class="form-control aval-slct" name="" id="years_of_study" title="start" required>
+            <option selected hidden disabled value="" placeholder>
+              select...
+            </option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+        </div>
+        <span class="p-2">to</span>
+        <div class="d-flex align-items-center">
+          <select class="form-control aval-slct" name="" id="" required>
+            <option selected hidden disabled value="" placeholder>
+              select... 
+            </option><span><i class="fa fa-plus"></i></span>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+          
+        </div>
+      </div> 
+      <i class="fa fa-trash remove_field0"></i>
+     </div>
+     
+      </div>
+          
+          `);
+
+                    x++;
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field0", function (e) {
+                e.preventDefault();
+                $(this).parent("div").remove();
+                x--;
+            });
+        });
+
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrap1");
+            var add_button = $(".add_field_button1");
+            var x = 1;
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+        <div class="form-item form-group input_fields_wrap1">
+        <div class="monday mb-3">
+        </div>
+     <div class="">
+      <div class="input-wrapper d-flex flex-lg-row">
+        <div class="">
+          <select class="form-control aval-slct" name="" id="years_of_study" title="start" required>
+            <option selected hidden disabled value="" placeholder>
+              select...
+            </option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+        </div>
+        <span class="p-2">to</span>
+        <div class="d-flex align-items-center">
+          <select class="form-control aval-slct" name="" id="" required>
+            <option selected hidden disabled value="" placeholder>
+              select... 
+            </option><span><i class="fa fa-plus"></i></span>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+          
+        </div>
+        <i class="fa fa-trash remove_field1"></i>
+      </div> 
+     </div>
+     
+      </div>
+          
+          `);
+
+                    x++;
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field1", function (e) {
+                e.preventDefault();
+                $(this).parent("div").remove();
+                x--;
+            });
+        });
+
+        //   field 2
+
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrap2");
+            var add_button = $(".add_field_button2");
+            var x = 1;
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+        <div class="form-item form-group input_fields_wrap2">
+        <div class="monday mb-3">
+        </div>
+     <div class="">
+      <div class="input-wrapper d-flex flex-lg-row">
+        <div class="">
+          <select class="form-control aval-slct" name="" id="years_of_study" title="start" required>
+            <option selected hidden disabled value="" placeholder>
+              select...
+            </option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+        </div>
+        <span class="p-2">to</span>
+        <div class="d-flex align-items-center">
+          <select class="form-control aval-slct" name="" id="" required>
+            <option selected hidden disabled value="" placeholder>
+              select... 
+            </option><span><i class="fa fa-plus"></i></span>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+          
+        </div>
+        <i class="fa fa-trash remove_field2"></i>
+      </div> 
+     </div>
+     
+      </div>
+          
+          `);
+
+                    x++;
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field2", function (e) {
+                e.preventDefault();
+                $(this).parent("div").remove();
+                x--;
+            });
+        });
+
+        //   field 3
+
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrap3");
+            var add_button = $(".add_field_button3");
+            var x = 1;
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+        <div class="form-item form-group input_fields_wrap3">
+        <div class="monday mb-3">
+        </div>
+     <div class="">
+      <div class="input-wrapper d-flex flex-lg-row">
+        <div class="">
+          <select class="form-control aval-slct" name="" id="years_of_study" title="start" required>
+            <option selected hidden disabled value="" placeholder>
+              select...
+            </option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+        </div>
+        <span class="p-2">to</span>
+        <div class="d-flex align-items-center">
+          <select class="form-control aval-slct" name="" id="" required>
+            <option selected hidden disabled value="" placeholder>
+              select... 
+            </option><span><i class="fa fa-plus"></i></span>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+          
+        </div>
+        <i class="fa fa-trash remove_field3"></i>
+      </div> 
+     </div>
+     
+      </div>
+          
+          `);
+
+                    x++;
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field3", function (e) {
+                e.preventDefault();
+                $(this).parent("div").remove();
+                x--;
+            });
+        });
+
+        //   field 4
+
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrap4");
+            var add_button = $(".add_field_button4");
+            var x = 1;
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+        <div class="form-item form-group input_fields_wrap4">
+        <div class="monday mb-3">
+        </div>
+     <div class="">
+      <div class="input-wrapper d-flex flex-lg-row">
+        <div class="">
+          <select class="form-control aval-slct" name="" id="years_of_study" title="start" required>
+            <option selected hidden disabled value="" placeholder>
+              select...
+            </option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+        </div>
+        <span class="p-2">to</span>
+        <div class="d-flex align-items-center">
+          <select class="form-control aval-slct" name="" id="" required>
+            <option selected hidden disabled value="" placeholder>
+              select... 
+            </option><span><i class="fa fa-plus"></i></span>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+          
+        </div>
+        <i class="fa fa-trash remove_field4"></i>
+      </div> 
+     </div>
+     
+      </div>
+          
+          `);
+
+                    x++;
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field4", function (e) {
+                e.preventDefault();
+                $(this).parent("div").remove();
+                x--;
+            });
+        });
+
+        //   field 5
+
+        $(document).ready(function () {
+            var max_fields = 10;
+            var wrapper = $(".input_fields_wrap5");
+            var add_button = $(".add_field_button5");
+            var x = 1;
+
+            $(add_button).click(function (e) {
+                e.preventDefault();
+                if (x < max_fields) {
+                    $(wrapper).append(`
+        <div class="form-item form-group input_fields_wrap5">
+        <div class="monday mb-3">
+        </div>
+     <div class="">
+      <div class="input-wrapper d-flex flex-lg-row">
+        <div class="">
+          <select class="form-control aval-slct" name="" id="years_of_study" title="start" required>
+            <option selected hidden disabled value="" placeholder>
+              select...
+            </option>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+        </div>
+        <span class="p-2">to</span>
+        <div class="d-flex align-items-center">
+          <select class="form-control aval-slct" name="" id="" required>
+            <option selected hidden disabled value="" placeholder>
+              select... 
+            </option><span><i class="fa fa-plus"></i></span>
+            <option value="">2002</option>
+            <option value="">2003</option>
+            <option value="">2004</option>
+          </select>
+          
+        </div>
+        <i class="fa fa-trash remove_field5"></i>
+      </div> 
+     </div>
+     
+      </div>
+          
+          `);
+
+                    x++;
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field5", function (e) {
+                e.preventDefault();
+                $(this).parent("div").remove();
+                x--;
+            });
+        });
+    </script>
+
+
+    <!-------------------------------------- Availability Section Ends Here -------------------------------------->
+
+
+
+    <script>
+        let about = document.querySelector(".About_Section");
+        let photo = document.querySelector(".Photo_Section");
+        let certification = document.querySelector(".Certification_Section");
+        let description = document.querySelector(".Description_Section");
+        let video = document.querySelector(".Video_Section");
+        let availability = document.querySelector(".Availability_Section");
+
+
+        // about.style.display = "none";
+        photo.style.display = "none";
+        certification.style.display = "none";
+        description.style.display = "none";
+        video.style.display = "none";
+        availability.style.display = "none";
+
+        //next buttons
+        let aboutNext = document.getElementById("about-next");
+        let photoNext = document.getElementById("photo-next");
+        let certificationNext = document.getElementById("certification-next");
+        let videoNext = document.getElementById("video-next");
+        let descriptionNext = document.getElementById("description-next");
+        let availabilityNext = document.getElementById("availability-next");
+
+
+
+        ////////////////////    About Script Starts Here    ////////////////////
+
+
+        //forward navigation
+        const form = document.getElementById("form")
+        const value1 = document.getElementById("user_fname");
+        const value2 = document.getElementById("user_lname");
+        const value3 = document.getElementById("user_email");
+        const value4 = document.getElementById("user_country");
+        const value5 = document.getElementById("user_language");
+        const value6 = document.getElementById("user_level");
+        const value7 = document.getElementById("user_certificate");
+        const value8 = document.getElementById("user_rate");
+        const value9 = document.getElementById("user_experience");
+        const value10 = document.getElementById("user_situation");
+        const value11 = document.getElementById("user_countrycode");
+        const value12 = document.getElementById("user_phonenumber");
+        const value13 = document.getElementById("user_check");
+
+
+        aboutNext.addEventListener("click", (e) => {
+            e.preventDefault()
+
+            validate()
+        })
+
+        const validate = () => {
+            const value1Val = user_fname.value.trim();
+            const value2Val = user_lname.value.trim();
+            const value3Val = user_email.value.trim();
+            const value4Val = user_country.value.trim();
+            const value5Val = user_language.value.trim();
+            const value6Val = user_level.value.trim();
+            const value7Val = user_certificate.value.trim();
+            const value8Val = user_rate.value.trim();
+            const value9Val = user_experience.value.trim();
+            const value10Val = user_situation.value.trim();
+            const value11Val = user_countrycode.value.trim();
+            const value12Val = user_phonenumber.value.trim();
+            const value13Val = user_check.value.trim();
+
+
+            const isEmail = (value3Val) => {
+                var atSymbol = value3Val.indexOf("@");
+                if (atSymbol < 1) return false;
+                var dot = value3Val.lastIndexOf('.')
+                if (dot === value3Val.length - 1) return false;
+                return true
+            }
+
+
+            //validate user lname
+
+            if (value1Val === "") {
+                setErrorMsg(value1, "This field is requred");
+            }
+            else if (value1Val.length < 3) {
+                setErrorMsg(value1, "username must be 2 char")
+
+            } else {
+                setSuccessMsg(value1)
+            }
+            if (value2Val === "") {
+                setErrorMsg(value2, "This field is requred");
+            } else {
+                setSuccessMsg(value2)
+            }
+            if (value3Val === "") {
+                setErrorMsg(value3, "This field is required")
+            } else if (!isEmail(value3Val)) {
+                setErrorMsg(value3, "@ is requried");
+
+            } else {
+                setSuccessMsg(value3)
+
+            }
+            if (value4Val === "") {
+                setErrorMsg(value4, "This field is required");
+            } else {
+                setSuccessMsg(value4)
+            }
+
+            if (value5Val === "") {
+                setErrorMsg(value5, "This field is required");
+            } else {
+                setSuccessMsg(value5)
+            }
+
+            if (value6Val === "") {
+                setErrorMsg(value6, "This field is required");
+            } else {
+                setSuccessMsg(value6)
+            }
+
+            if (value7Val === "") {
+                setErrorMsg(value7, "This field is required");
+            } else {
+                setSuccessMsg(value7)
+            }
+
+            if (value8Val === "") {
+                setErrorMsg(value8, "This field is required");
+            } else {
+                setSuccessMsg(value8)
+            }
+
+            if (value9Val === "") {
+                setErrorMsg(value9, "This field is required");
+            } else {
+                setSuccessMsg(value9)
+            }
+
+            if (value10Val === "") {
+                setErrorMsg(value10, "This field is required");
+            } else {
+                setSuccessMsg(value10)
+            }
+
+            if (value11Val === "") {
+                setErrorMsg(value11, "This field is required");
+            } else {
+                setSuccessMsg(value11)
+            }
+
+            if (value12Val === "") {
+                setErrorMsg(value12, "This field is required");
+            } else {
+                setSuccessMsg(value12)
+            }
+
+            if (value13Val === false) {
+                setErrorMsg(value13, "This field is required");
+            } else {
+                setSuccessMsg(value13)
+            }
+
+        }
+
+
+        function setErrorMsg(input, errormsgs) {
+            const formGrp = input.parentElement;
+            const small = formGrp.querySelector('small');
+            formGrp.className = "form-grp error";
+            small.innerText = errormsgs
+        }
+
+        function setSuccessMsg(input) {
+            const formGrp = input.parentElement;
+            formGrp.className = 'form-grp success'
+        }
+
+        // select validation
+        function setErrorMsg1(select, errormsgs) {
+            const formGrp = select.parentElement;
+            const small = formGrp.querySelector('small');
+            formGrp.className = "form-grp error";
+            small.innerText = errormsgs
+        }
+
+        function setSuccessMsg1(select) {
+            const formGrp = select.parentElement;
+            formGrp.className = 'form-grp success'
+        }
+
+
+        aboutNext.addEventListener("click", (event) => {
+            event.preventDefault();
+            const value1 = document.getElementById("user_fname").value;
+            const value2 = document.getElementById("user_lname").value;
+            const value3 = document.getElementById("user_email").value;
+            const value4 = document.getElementById("user_country").value;
+            const value5 = document.getElementById("user_language").value;
+            const value6 = document.getElementById("user_level").value;
+            const value7 = document.getElementById("user_certificate").value;
+            const value8 = document.getElementById("user_rate").value;
+            const value9 = document.getElementById("user_experience").value;
+            const value10 = document.getElementById("user_situation").value;
+            const value11 = document.getElementById("user_countrycode").value;
+            const value12 = document.getElementById("user_phonenumber").value;
+            const value13 = document.getElementById("user_check").checked;
+            if (value1 != "" && value2 != "" && value3 != "" && value4 != "" && value5 != "" && value6 != "" && value7 != "" && value8 != "" && value9 != "" && value10 != "" && value11 != "" && value12 != "" && value13 != false) {
+                availability.style.display = "none";
+                about.style.display = "none";
+                photo.style.display = "block";
+            }
+        });
+
+
+        ////////////////////    About Script Ends Here    ////////////////////
+
+
+
+        ////////////////////    Photo Script Starts Here    ////////////////////
+
+
+
+
+        // Photo Validation //
+        let myForm = document.getElementById('myform');
+        let imageInput = document.getElementById('file');
+        let preview = document.getElementById('preview');
+
+        imageInput.addEventListener('change', function (event) {
+            if (event.target.files.length === 0) {
+                return
+            } else {
+                let tempUrl = URL.createObjectURL(event.target.files[0])
+                preview.setAttribute('src', tempUrl)
+            }
+        })
+
+
+        myForm.addEventListener('submit', function (e) {
+            e.preventDefault()
+            var img = document.forms["photoForm"]["file"];
+            if (img.value != "") {
+                photo.style.display = "none";
+                certification.style.display = "block";
+            } else {
+                return false;
+            }
+        })
+
+
+        // Photo Drop Zone Starts Here //
+
+        document.querySelectorAll(".drop_zone_input").forEach(inputElement => {
+            const dropZoneElement = inputElement.closest(".drop_zone");
+
+            dropZoneElement.addEventListener("click", e => {
+                inputElement.click();
+            });
+
+            inputElement.addEventListener("change", e => {
+                if (inputElement.files.length) {
+                    updateThumbnail(dropZoneElement, inputElement.files[0]);
+                }
+            });
+
+            dropZoneElement.addEventListener("dragover", e => {
+                e.preventDefault();
+                dropZoneElement.classList.add("drop_zone_over");
+            });
+
+            ["dragleave", "dragend"].forEach(type => {
+                dropZoneElement.addEventListener(type, e => {
+                    dropZoneElement.classList.remove("drop_zone_over")
+                });
+            });
+
+            dropZoneElement.addEventListener("drop", e => {
+                e.preventDefault();
+
+                if (e.dataTransfer.files.length) {
+                    inputElement.files = e.dataTransfer.files;
+                    updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+                }
+
+                dropZoneElement.classList.remove("drop_zone_over");
+            });
+        });
+
+
+        //    First time - remove the prompt //
+
+
+        /*   // Updates the thumbnail on a drop element //
+
+       @param {HTMLElement} dropZoneElement
+       @param {File} file
+
+       */
+
+        function updateThumbnail(dropZoneElement, file) {
+            let thumbnailElement = dropZoneElement.querySelector(".drop_zone_thumb");
+
+            if (dropZoneElement.querySelector(".drop_zone_prompt")) {
+                dropZoneElement.querySelector(".drop_zone_prompt").remove();
+            }
+
+            //    First time there is no thumbnail element, so let's create it
+
+            if (!thumbnailElement) {
+                thumbnailElement = document.createElement("div");
+                thumbnailElement.classList.add("drop_zone_thumb");
+                dropZoneElement.appendChild(thumbnailElement);
+            }
+
+            thumbnailElement.dataset.label = file.name;
+
+            //  Show thumbnail for image files //
+
+            if (file.type.startsWith("image/")) {
+                const reader = new FileReader();
+
+                reader.readAsDataURL(file);
+                reader.onload = () => {
+                    thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+                };
+            } else {
+                thumbnailElement.style.backgroundImage = null;
+            }
+        }
+
+
+
+
+        ////////////////////    Certification Script Starts Here    ////////////////////
+
+        // let certForm = document.getElementById('cert_form')
+        let certSubject = document.getElementById('cert_subject');
+        let certCertificate = document.getElementById('cert_certificate');
+        let certDescription = document.getElementById('cert_description');
+        let certIssuedby = document.getElementById('cert_issuedby');
+        let certStudy1 = document.getElementById('cert_study1');
+        let certStudy2 = document.getElementById('cert_study2');
+        let certFile = document.getElementById('cert_file');
+        let certCheck = document.getElementById('cert_check');
+
+        certificationNext.addEventListener('click', (event) => {
+            event.preventDefault()
+
+            certValidation()
+        })
+
+        let certValidation = () => {
+            let certSubjectVal = cert_subject.value.trim();
+            let certCertificateVal = cert_certificate.value.trim();
+            let certDescriptionVal = cert_description.value.trim();
+            let certIssuedbyVal = cert_issuedby.value.trim();
+            let certStudy1Val = cert_study1.value.trim()
+            let certStudy2Val = cert_study2.value.trim();
+            let certFileVal = cert_file.value.trim();
+            let certCheckVal = cert_check.value.trim();
+
+            if (certSubjectVal === "") {
+                setErrorMsg(certSubject, "This field is required");
+            }
+            else {
+                setSuccessMsg(certSubject)
+            }
+            if (certCertificateVal === "") {
+                setErrorMsg(certCertificate, "This field is required");
+            }
+            else {
+                setSuccessMsg(certCertificate)
+            }
+            if (certDescriptionVal === "") {
+                setErrorMsg(certDescription, "This field is required");
+            }
+            else {
+                setSuccessMsg(certDescription)
+            }
+            if (certIssuedbyVal === "") {
+                setErrorMsg(certIssuedby, "This field is required");
+            }
+            else {
+                setSuccessMsg(certIssuedby)
+            }
+            if (certStudy1Val === "") {
+                setErrorMsg(certStudy1, "This field is required");
+            }
+            else {
+                setSuccessMsg(certStudy1)
+            }
+            if (certStudy2Val === "") {
+                setErrorMsg(certStudy2, "This field is required");
+            }
+            else {
+                setSuccessMsg(certStudy2)
+            }
+            if (certFileVal === "") {
+                setErrorMsg(certFile, "This field is required");
+            }
+            else {
+                setSuccessMsg(certFile)
+            }
+            if (certCheckVal === false) {
+                setErrorMsg(certCheck, "This field is required");
+            }
+            else {
+                setSuccessMsg(certCheck)
+            }
+        }
+
+        function setErrorMsg(input, errormsg) {
+            const certGrp = input.parentElement;
+            const small = certGrp.querySelector('small')
+            certGrp.className = "cert-grp error";
+            small.innerText.errormsg;
+        }
+
+        function setSuccessMsg(input) {
+            const certGrp = input.parentElement;
+            certGrp.className = 'cert-grp success'
+        }
+
+        function setErrorMsg(select, errormsgs) {
+            const certGrp = select.parentElement;
+            const small = certGrp.querySelector('small');
+            certGrp.className = "form-grp error";
+            small.innerText = errormsgs
+        }
+
+        function setSuccessMsg(select) {
+            const certGrp = select.parentElement;
+            certGrp.className = 'form-grp success'
+        }
+
+        certificationNext.addEventListener("click", (event) => {
+            event.preventDefault();
+            let certSubject = document.getElementById('cert_subject').value;
+            let certCertificate = document.getElementById('cert_certificate').value;
+            let certDescription = document.getElementById('cert_description').value;
+            let certIssuedby = document.getElementById('cert_issuedby').value;
+            let certStudy1 = document.getElementById('cert_study1').value;
+            let certStudy2 = document.getElementById('cert_study2').value;
+            let certFile = document.getElementById('cert_file').value;
+            let certCheck = document.getElementById('cert_check').checked;
+
+            if (certSubject != "" && certCertificate != "" && certDescription != "" && certIssuedby != "" && certStudy1 != "" && certStudy2 != "" && certFile != "" && certCheck !=false) {
+                certification.style.display = "none";
+                description.style.display = "block";
+            } else {
+                console.log('All fields are required')
+            }
+
+
+
+
+        });
+
+
+
+
+
+
+        ////////////////////    Description Script Starts Here    ////////////////////
+        let descName = document.getElementById('desc_name')
+        let descIntro1 = document.getElementById('desc_intro1');
+        let descIntro2 = document.getElementById('desc_intro2');
+        let descIntro3 = document.getElementById('desc_intro3');
+
+
+        descriptionNext.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            descValidate();
+        });
+
+        let descValidate = () => {
+            let descNameVal = desc_name.value.trim();
+            let descIntro1Val = desc_intro1.value.trim();
+            let descIntro2Val = desc_intro2.value.trim();
+            let descIntro3Val = desc_intro3.value.trim();
+
+            if (descNameVal === "") {
+                setErrorMsg1(descName, "This field is required")
+            } else {
+                setSuccessMsg1(descName);
+            }
+
+            if (descIntro1Val === "") {
+                setErrorMsg1(descIntro1, "This field is required!");
+
+            }
+            else if (descIntro1Val.length < 2) {
+                setErrorMsg1(descIntro1, "username must be 2 char")
+
+            }
+            else {
+                setSuccessMsg1(descIntro1);
+            };
+
+            if (descIntro2Val === "") {
+                setErrorMsg1(descIntro2, "This field is required!");
+            }
+            else {
+                setSuccessMsg1(desc_intro2);
+            };
+
+            if (descIntro3Val === "") {
+                setErrorMsg1(desc_intro3, "This field is required!");
+            }
+            else {
+                setSuccessMsg1(desc_intro3);
+            };
+        }
+
+
+        function setErrorMsg1(input, errormsg) {
+            const descGrp = input.parentElement;
+            const small = descGrp.querySelector('small')
+            descGrp.className = "desc-grp error";
+            small.innerText.errormsg;
+        }
+
+        function setSuccessMsg1(input) {
+            const descGrp = input.parentElement;
+            descGrp.className = 'desc-grp success'
+        }
+
+        function setErrorMsg1(textarea, errormsg) {
+            const descGrp = textarea.parentElement;
+            const small = descGrp.querySelector('small')
+            descGrp.className = "desc-grp error";
+            small.innerText.errormsg;
+        }
+
+        function setSuccessMsg1(textarea) {
+            const descGrp = textarea.parentElement;
+            descGrp.className = 'desc-grp success'
+        }
+
+
+
+        descriptionNext.addEventListener('click', (event) => {
+            event.preventDefault();
+            let descName = document.getElementById('desc_name').value;
+            let descIntro1 = document.getElementById('desc_intro1').value;
+            let descIntro2 = document.getElementById('desc_intro2').value;
+            let descIntro3 = document.getElementById('desc_intro3').value;
+
+            if (descName != "" && descIntro1 != "" && descIntro2 != "" && descIntro3 != "") {
+                description.style.display = "none";
+                video.style.display = "block";
+            } else {
+                return false
+            }
+
+
+        });
+
+
+
+        ////////////////////    Video Script Starts Here    ////////////////////
+
+        let videoLInk = document.getElementById('video_lnk');
+        videoNext.addEventListener('click', (e) => {
+            e.preventDefault()
+            videoValidate()
+        })
+
+        const videoValidate = () => {
+            let videoLInkVal = video_lnk.value.trim();
+
+            if (videoLInkVal === "") {
+                setErrorMsgv(videoLInk, "this field is required");
+            } else {
+                setSuccessMsgv(videoLInk);
+            }
+
+        }
+        function setErrorMsgv(input, errormsg) {
+            const videoGrp = input.parentElement;
+            const small = videoGrp.querySelector('small');
+            videoGrp.className = ('video-grp error');
+            small.innerText.errormsg
+        }
+
+        function setSuccessMsgv(input) {
+            const videoGrp = input.parentElement;
+            videoGrp.className = 'video-grp success'
+        }
+        videoNext.addEventListener('click', (event) => {
+            event.preventDefault();
+            let videoLInk = document.getElementById('video_lnk').value;
+
+            if (videoLInk != "") {
+                video.style.display = "none";
+                availability.style.display = "block";
+            } else {
+                return false;
+            }
+
+        });
+
+        ////////////////////    Video Script Ends Here    ////////////////////
+
+
+
+        ////////////////////    Availability Script Starts Here    ////////////////////
+
+
+
+        // AVALIABALITY SECITON VALIDATION
+
+        const timezone = document.getElementById('time_zone');
+        const avalYear1 = document.getElementById('aval_year1');
+        const avalYear2 = document.getElementById('aval_year2');
+        const avalYear3 = document.getElementById('aval_year3');
+        const avalYear4 = document.getElementById('aval_year4');
+        const avalYear5 = document.getElementById('aval_year5');
+        const avalYear6 = document.getElementById('aval_year6');
+        const avalYear7 = document.getElementById('aval_year7');
+        const avalYear8 = document.getElementById('aval_year8');
+        const avalYear9 = document.getElementById('aval_year9');
+        const avalYear10 = document.getElementById('aval_year10');
+        const avalYear11 = document.getElementById('aval_year11');
+        const avalYear12 = document.getElementById('aval_year12');
+
+
+
+        availabilityNext.addEventListener('click', (e) => {
+            e.preventDefault()
+
+            availValidation()
+        })
+
+        const availValidation = () => {
+            const timezoneVal = time_zone.value.trim();
+            const avalYear1Val = aval_year1.value.trim();
+            const avalYear2Val = aval_year2.value.trim();
+            const avalYear3Val = aval_year3.value.trim();
+            const avalYear4Val = aval_year4.value.trim();
+            const avalYear5Val = aval_year5.value.trim();
+            const avalYear6Val = aval_year6.value.trim();
+            const avalYear7Val = aval_year7.value.trim();
+            const avalYear8Val = aval_year8.value.trim();
+            const avalYear9Val = aval_year9.value.trim();
+            const avalYear10Val = aval_year10.value.trim();
+            const avalYear11Val = aval_year11.value.trim();
+            const avalYear12Val = aval_year12.value.trim();
+
+
+            if (timezoneVal === "") {
+                setErrorMsgi(time_zone, "This field is required");
+            } else {
+                setSuccessMsgi(time_zone);
+            }
+            if (avalYear1Val === "") {
+                setErrorMsgi(avalYear1, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear1)
+            }
+            if (avalYear2Val === "") {
+                setErrorMsgi(avalYear2, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear2)
+            }
+            if (avalYear3Val === "") {
+                setErrorMsgi(avalYear3, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear3)
+            }
+            if (avalYear4Val === "") {
+                setErrorMsgi(avalYear4, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear4)
+            }
+            if (avalYear5Val === "") {
+                setErrorMsgi(avalYear5, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear5)
+            }
+            if (avalYear6Val === "") {
+                setErrorMsgi(avalYear6, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear6)
+            }
+            if (avalYear7Val === "") {
+                setErrorMsgi(avalYear7, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear7)
+            }
+            if (avalYear8Val === "") {
+                setErrorMsgi(avalYear8, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear8)
+            }
+            if (avalYear9Val === "") {
+                setErrorMsgi(avalYear9, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear9)
+            }
+            if (avalYear10Val === "") {
+                setErrorMsgi(avalYear10, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear10)
+            }
+            if (avalYear11Val === "") {
+                setErrorMsgi(avalYear11, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear11)
+            }
+            if (avalYear12Val === "") {
+                setErrorMsgi(avalYear12, "Thsi field is required");
+            } else {
+                setSuccessMsgi(avalYear12)
+            }
+        }
+
+        function setErrorMsgi(input, errormsg) {
+            const avalGrp = input.parentElement;
+            const small = avalGrp.querySelector('small');
+            formGrp.className = "aval-grp error"
+            small.innerText = errormsg;
+        }
+
+        function setErrorMsgi(input) {
+            const avalGrp = input.parentElement;
+            avalGrp.className = "aval-grp success"
+
+        }
+
+        function setErrorMsgi(select, errormsg) {
+            const avalGrp = select.parentElement;
+            const small = avalGrp.querySelector('small');
+            avalGrp.className = "aval-grp error"
+            small.innerText = errormsg;
+        }
+
+        function setSuccessMsgi(select) {
+            const avalGrp = select.parentElement;
+            avalGrp.className = "aval-grp success"
+
+        }
+
+        availabilityNext.addEventListener('click', () => {
+
+
+            const timezone = document.getElementById('time_zone').value;
+            const avalYear1 = document.getElementById('aval_year1').value;
+            const avalYear2 = document.getElementById('aval_year2').value;
+            const avalYear3 = document.getElementById('aval_year3').value;
+            const avalYear4 = document.getElementById('aval_year4').value;
+            const avalYear5 = document.getElementById('aval_year5').value;
+            const avalYear6 = document.getElementById('aval_year6').value;
+            const avalYear7 = document.getElementById('aval_year7').value;
+            const avalYear8 = document.getElementById('aval_year8').value;
+            const avalYear9 = document.getElementById('aval_year9').value;
+            const avalYear10 = document.getElementById('aval_year10').value;
+            const avalYear11 = document.getElementById('aval_year11').value;
+            const avalYear12 = document.getElementById('aval_year12').value;
+
+            if (timezone != "" && avalYear1 != "" && avalYear2 != "" && avalYear3 != "" && avalYear4 != "" && avalYear5 != "" && avalYear6 != "" && avalYear7 != "" && avalYear7 != "" && avalYear8 != "" && avalYear10 != "" && avalYear11 != "" && avalYear12 != "") {
+                availability.style.display = "none";
+                about.style.display = "none";
+            }
+            else {
+                return false
+            }
+
+        })
+
+        //    
+
+        //back buttons
+        let aboutBack = document.getElementById("about-back");
+        let photoBack = document.getElementById("photo-back");
+        let certificationBack = document.getElementById("certification-back");
+        let videoBack = document.getElementById("video-back");
+        let descriptionBack = document.getElementById("description-back");
+        let availabilityBack = document.getElementById("availability-back");
+
+        //backward navigation
+
+        photoBack.addEventListener('click', (event) => {
+            event.preventDefault();
+            photo.style.display = "none";
+            about.style.display = "block";
+        });
+
+        certificationBack.addEventListener('click', (event) => {
+            event.preventDefault();
+            certification.style.display = "none";
+            photo.style.display = "block";
+        });
+
+        descriptionBack.addEventListener('click', (event) => {
+            event.preventDefault();
+            description.style.display = "none";
+            certification.style.display = "block";
+        });
+
+        videoBack.addEventListener('click', (event) => {
+            event.preventDefault();
+            video.style.display = "none";
+            description.style.display = "block";
+        });
+
+        availabilityBack.addEventListener('click', (event) => {
+            event.preventDefault();
+            about.style.display = "none";
+            availability.style.display = "none";
+            video.style.display = "block";
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
